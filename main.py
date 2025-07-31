@@ -47,7 +47,7 @@ for term in search_terms:
                 EC.element_to_be_clickable((By.XPATH, '//button[@class="green"]'))
             ).click()
         except:
-            pass  # Skip if no alert
+            pass  
 
         # Click first search result
         first_result = WebDriverWait(driver, 10).until(
